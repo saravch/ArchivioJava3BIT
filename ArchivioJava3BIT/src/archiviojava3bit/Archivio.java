@@ -1,5 +1,7 @@
 package archiviojava3bit;
 
+import java.util.ArrayList;
+
 /**
  * Contiene gli oggetti del programma.
  * Implementata tramite un ArrayList.
@@ -9,5 +11,11 @@ package archiviojava3bit;
  * @author INSERISCI_NOME
  */
 public class Archivio {
+    private ArrayList<Articolo> archivio;
     
+    //Costruttore 
+    public Archivio(){
+        //Creo l'ArrayList vuoto
+        archivio = new ArrayList(0);
+    }
 }
