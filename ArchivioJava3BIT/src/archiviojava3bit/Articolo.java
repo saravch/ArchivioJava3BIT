@@ -10,10 +10,27 @@ package archiviojava3bit;
  * @author Sara Vacher
  */
 public class Articolo { 
+    private String nome;
     private String codice;
     private float prezzo;
     private String descrizione;
     private String colore;
+
+    public Articolo(String nome, String codice, float prezzo, String descrizione, String colore) {
+        this.nome = nome;
+        this.codice = codice;
+        this.prezzo = prezzo;
+        this.descrizione = descrizione;
+        this.colore = colore;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
     public String getCodice() {
         return codice;
