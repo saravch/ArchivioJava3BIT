@@ -37,4 +37,34 @@ public class Archivio {
         //Se arrivo qui significa che l'articolo non c'è
         return null;
     }
+    
+    //Metodo che restituisce la stringa che rappresenta tutto l'archivio
+    public String toString(){
+        String s = "";
+        for(int i = 0; i < archivio.size(); i++){
+            Articolo articolo = archivio.get(i);
+            s += articolo.toString();
+            if(i < archivio.size() - 1){
+                s += "\r\n";
+            }
+        }
+        return s;
+    }
+    
+    //Metodo che restitiusce l'elenco degli articoli
+    public ArrayList<Articolo> elencoArticoli(){
+        return archivio;
+    }
+    
+    //Metodo per eliminare un articolo dall'archivio
+    public boolean elimina(String codice){
+        Articolo articolo;
+        articolo = ricerca(codice);
+        if(articolo != null){
+            //Cancello l'articolo dall'arraylist
+            archivio.remove(articolo);
+            return true;
+        }
+        return false;
+    }
 }
