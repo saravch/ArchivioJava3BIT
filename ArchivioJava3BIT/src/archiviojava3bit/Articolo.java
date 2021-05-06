@@ -64,6 +64,21 @@ public class Articolo {
         this.colore = colore;
     }
     
+    //Metodo che restituisce la stringa che rappresenta l'articolo
+    @Override
+    public String toString(){
+        String s;
+        s = codice;
+        s += ",";
+        s += nome;
+        s += ",";
+        s += descrizione;
+        s += ",";
+        s += Float.toString(prezzo);
+        s += ",";
+        s += colore;
+        return s;
+    }
     
     
 }
