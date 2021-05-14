@@ -1,0 +1,10 @@
+Karategi;#001;56.00;Kimono da Karate Adidas k300 per Kata;Bianco;
+Cintura;#002;18.00;Cintura Adidas elite larga 4 cm;Bianco,Giallo, Arancione,Verde,Blu,Marrone,Nera;
+T-shirt;#003;20.50;Maglietta con logo della società;Bianco,Nero,Arancione;
+Guanti;#004;38.00;Guantini da Kumite Adidas in vinile;Rosso,Blu;
+Casco;#005;64.00;Casco con grata Vandal;Nero;
+Paradenti;#006;24.00;Paradenti Adidas gold;Nero;
+Paraseno;#007;43.00;Paraseno Adidas omologato WKF;Bianco;
+Sacco;#008;170.00;Sacco Adidas ;Nero;
+Tatami;#009;34.00;Tatami Karate 100x100 cm;Blu,Nero;
+Borsa;#010;50.00;Borsa Adidas training in poliestere;Nero;
