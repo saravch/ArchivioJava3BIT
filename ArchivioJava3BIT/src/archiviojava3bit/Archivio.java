@@ -15,7 +15,7 @@ import java.util.logging.Logger;
  * Ci permette di inserire gli oggetti,
  * effettuare ricerche e
  * aggiungere/rimuovere/modificare un oggetto.
- * @author INSERISCI_NOME
+ * @author Sara Vacher
  */
 public class Archivio {
   // TO DO
@@ -185,17 +185,21 @@ public class Archivio {
       String linea;
       String campi[];
       while ((linea = in.readLine()) != null) {
-        campi = linea.split(";");
+        campi = linea.split(",");
+        System.out.println(campi.length);
+        for(int i=0; i<campi.length; i++){
+            System.out.println(campi[i]);
+        }
         //campi[0] --> nome
         //campi[1] --> codice
         //campi[2] --> prezzo 
         //campi[3] --> descrizione
         //campi[4] --> colore
-        float prezzo = Float.parseFloat(campi[2]);
+        float prezzo = Float.parseFloat(campi[3]);
 
         // Adesso ho i dati necessari per costruite un oggetto
         // Articolo
-        Articolo articolo = new Articolo(campi[0], campi[1], prezzo, campi[3], campi[4]);
+        Articolo articolo = new Articolo(campi[1], campi[0], prezzo, campi[2], campi[4]);
 
         // aggiungo l'articolo all'ArrayList
         articoli.add(articolo);

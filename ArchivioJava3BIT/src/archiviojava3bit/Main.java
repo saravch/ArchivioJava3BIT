@@ -6,7 +6,7 @@ import java.util.Scanner;
 /**
  * Si occupa dell'interfaccia utente con un menu. Qui si può usare println
  *
- * @author INSERISCI_NOME
+ * @author Sara Vacher
  */
 public class Main {
 
@@ -53,13 +53,13 @@ public class Main {
                     // 1. Chiedo all'utente i dati del nuovo articolo da inserire         
                     System.out.print("Inserisci il nome: ");
                     String nome = tastiera.nextLine();
-                    System.out.print("Inserisci la codice: ");
+                    System.out.print("Inserisci il codice: ");
                     String codice = tastiera.nextLine();
-                    System.out.print("Inserisci la prezzo: ");
+                    System.out.print("Inserisci il prezzo: ");
                     float prezzo = Float.parseFloat(tastiera.nextLine());
                     System.out.print("Inserisci la descrizione: ");
                     String descrizione = tastiera.nextLine();
-                    System.out.print("Inserisci la colore: ");
+                    System.out.print("Inserisci il colore: ");
                     String colore = tastiera.nextLine();
 
                     // 2. Creo un oggetto articolo con i dati forniti dall'utente
@@ -109,9 +109,9 @@ public class Main {
                 case 6:
                     System.out.print("Inserisci il codice: ");
                     codice = tastiera.nextLine();
-                    System.out.print("Inserisci la nome: ");
+                    System.out.print("Inserisci il nome: ");
                     nome = tastiera.nextLine();
-                    System.out.print("Inserisci la prezzo: ");
+                    System.out.print("Inserisci il prezzo: ");
                     prezzo = Integer.parseInt(tastiera.nextLine());
                     System.out.print("Inserisci la descrizione: ");
                     descrizione = tastiera.nextLine();
@@ -119,9 +119,9 @@ public class Main {
                     colore = tastiera.nextLine();
 
                     if (archivio.modificaArticolo(nome, codice, prezzo, descrizione, colore)) {
-                        System.out.println("Modifica moto avvenuta correttamente.");
+                        System.out.println("Modifica articolo avvenuta correttamente.");
                     } else {
-                        System.out.println("Non è stato possibile modificare la moto.");
+                        System.out.println("Non è stato possibile modificare l'articolo.");
                     }
                     break;
             }
